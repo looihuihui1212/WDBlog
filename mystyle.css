@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+h1, p, a, h2, li{
+	color: purple;
+	font-family: 'Dekko';
+}
+*{
+	text-align: center;
+}
+h1{
+	font-weight: bold;
+}
+hr{
+	border: 1px solid #F3C2C3;
+}
