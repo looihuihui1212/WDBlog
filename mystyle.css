@@ -1,15 +1,100 @@
-@charset "utf-8";
-/* CSS Document */
-h1, p, a, h2, li{
-	color: purple;
-	font-family: 'Dekko';
-}
-*{
+* {
+	box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Quicksand', sans-serif;
+	  padding: 20px;
+    background-color: #ECE6FF;
+  }
+  header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+    border-radius: 20px;
+    font-size: 20px;
+  }
+
+  .tagline{
+    font-size: 15px;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-left: -57px;
+    margin-top: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: purple;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  li a:hover {
+    background-color: whitesmoke;
+    color: purple;
+  }
+  
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /*image */
+  .img {
+    background-color: #ECE6FF;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+	padding: 20px;
 	text-align: center;
-}
-h1{
-	font-weight: bold;
-}
-hr{
-	border: 1px solid #F3C2C3;
-}
+	background: #ddd;
+	margin-top: 20px;
+  }
+  
+  /* Mobile */
+  @media screen and (max-width: 800px) {
+	.leftcolumn, .rightcolumn {   
+	  width: 100%;
+	  padding: 0;
+	}
+  }
