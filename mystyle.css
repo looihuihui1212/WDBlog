@@ -70,6 +70,11 @@
     border-radius: 20px;
   }
   
+  #wk5 img{
+    width: 45%;
+    padding: 10px;
+  }
+
   .card {
     background-color: white;
     padding: 20px;
