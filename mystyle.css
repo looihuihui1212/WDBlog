@@ -87,8 +87,11 @@
   .footer {
 	padding: 20px;
 	text-align: center;
-	background: #ddd;
+	background: white;
 	margin-top: 20px;
+  border-radius: 20px;
+  font-size: 10px;
+
   }
   
   /* Mobile */
