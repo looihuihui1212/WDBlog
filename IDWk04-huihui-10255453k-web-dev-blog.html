@@ -12,6 +12,7 @@
   body {
       font-family: 'Gaegu', sans-serif;
       background-color: #f8f9fa;
+      text-align: center;
   }
   .navbar {
       background-color: #b19cd9;
@@ -57,9 +58,24 @@
     display: none;
   }
   .article img {
-    max-height: 100%;
+    max-height: 50%;
+    width: 50%;
+    object-fit: cover; 
+    margin: auto;
+    display: block; 
+  }
+  table {
     width: 100%;
-    object-fit: cover; /* This ensures the image covers the entire container while maintaining its aspect ratio */
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+  }
+  th {
+      background-color: #f2f2f2;
   }
 </style>
 </head>
@@ -131,6 +147,14 @@
       <li class="page-item"><a class="page-link" href="#" onclick="showArticle('wk4', event)">Week 4</a></li>
       <li class="page-item"><a class="page-link" href="#" onclick="showArticle('wk5', event)">Week 5</a></li>
       <li class="page-item"><a class="page-link" href="#" onclick="showArticle('wk6', event)">Week 6</a></li>
+      <li class="page-item"><a class="page-link" href="#" onclick="showArticle('wk7', event)">Week 7</a></li>
+      <li class="page-item"><a class="page-link" href="#" onclick="showArticle('wk8', event)">Week 8</a></li>
+      <li class="page-item"><a class="page-link" href="#" onclick="showArticle('wk9', event)">Week 9</a></li>
+      <li class="page-item"><a class="page-link" href="#" onclick="showArticle('wk10', event)">Week 10</a></li>
+      <li class="page-item"><a class="page-link" href="#" onclick="showArticle('wk11', event)">Week 11</a></li>
+      <li class="page-item"><a class="page-link" href="#" onclick="showArticle('wk12', event)">Week 12</a></li>
+      <li class="page-item"><a class="page-link" href="#" onclick="showArticle('wk13', event)">Week 13</a></li>
+      <li class="page-item"><a class="page-link" href="#" onclick="showArticle('wk14', event)">Week 14</a></li>
     </ul>
   </nav>
 </div>
@@ -142,6 +166,7 @@
       <h2>What I learnt? Week 1</h2>
       <h5>HTML</h5>
       <img src="images/HTML_Blog-scaled.jpeg" alt="html" class="img">
+      <br>
       <p>Today I learned about HTML. HTML is my favorite module because I love designing websites, but when it comes to JavaScript, I want to give up. I should have been born during the invention of the internet and be the one using HTML4. Most Websites are created with
         languages called HTML & CSS. By learning these two powerful languages, you will be able to build websites on our own. </p>
     </article>
@@ -151,6 +176,7 @@
       <h2>What I learnt? Week 2</h2>
       <h5>CSS</h5>
       <img src="images/centering-css-tweet.jpeg" alt="css" class="img">
+      <br>
       <p>Today I learned about CSS. Finally, we are touching on the design interface. To be honest, I have forgotten a lot about HTML and CSS.</p>
     </article>
 
@@ -159,6 +185,7 @@
       <h2>What I learnt? Week 3</h2>
       <h5>Forms</h5>
       <img src="images/Screenshot 2023-11-12 193111.png" alt="form i created" class="img">
+      <br>
       <p>Today we learned about forms and CSS selectors. It's a bit complicated when it comes to grouping selectors. Hopefully, the game can help me more. The above image is the form that I have created using HTML and CSS.</p>
     </article>
 
@@ -167,6 +194,7 @@
       <h2>What I learnt? Week 4</h2>
       <h5>Responsive Images</h5>
       <img src="images/DSQ_Responsive_Logo3.jpg" alt="responsive logo image" class="img">
+      <br>
       <p>Today we learned about responsive images using flex layout.</p>
     </article>
 
@@ -174,10 +202,9 @@
     <article class="card article" id="wk5">
       <h2>What I learnt? Week 5</h2>
       <h5>Week 5 Completion</h5>
-      <center>
-        <img src="images/Screenshot_completion.png" alt="lesson completion" class="img">
-        <img src="images/Screenshot_Quiz_Completion.jpg" alt="quiz completion" class="img">
-      </center>
+      <img src="images/Screenshot_completion.png" alt="lesson completion" class="img">
+      <img src="images/Screenshot_Quiz_Completion.jpg" alt="quiz completion" class="img">
+      <br>
       <h5>Getting started with Javascript</h5>
       <p>Today, I learned the basics of JavaScript. JavaScript is a programming language used to make websites interactive. It runs in web browsers and allows us to change the website content dynamically. I learned about variables, which are like boxes to store information and use JS to retrieve data. Additionally, I also learned about objects, arrays, operations, and loops. These are similar to Python. </p>
     </article>
@@ -187,9 +214,105 @@
       <h2>What I learnt? Week 6</h2>
       <h5>Javascript</h5>
       <img src="images/js.png" alt="CA6 exercise" class="img">
-      <p>Today we learned about Javascript and did some exercises for our class activity on JS objects.</p>
+      <br>
+      <p>
+        Today, I learned about two types of objects in JavaScript: Literal Objects and Function-Based Objects. 
+        Literal Objects are straightforward and have no constructors. They are suitable for creating single instances, 
+        like global configurations such as 'game settings.' On the other hand, Function-Based Objects have constructors and are useful 
+        for creating multiple instances with similar functionality.</p>
+    </article>
+  
+    <!-- Article 7: Week 7 -->
+    <article class="card article" id="wk7">
+      <h2>What I learnt? Week 7</h2>
+      <h5>DOM</h5>
+      <img src="images/wk7.png" alt="CA7 exercise" class="img">
+      <br>
+      <p>Today, I learned that when a webpage loads on a browser, it creates something called a DOM Tree. 
+        This tree is like a model that shows the structure of the webpage, including all the elements like text, 
+        images, and buttons. The DOM Tree helps browsers understand and change the content of a webpage, making it 
+        possible for websites to be interactive and dynamic. It was interesting to discover how this DOM Tree plays a 
+        crucial role in web development, making websites more user-friendly and responsive.</p>
+    </article>
+
+    <!-- Article 8: Week 8 -->
+    <article class="card article" id="wk8">
+      <h2>What I learnt? Week 8</h2>
+      <h5>Fetch API</h5>
+      <img src="images/wk8.png" alt="CA8 exercise" class="img">
+      <br>
+      <p>Today, I learned about APIs, API Take a request. Deliver it. Bring back a response</p>
+      <table>
+        <tr>
+            <th>Without API</th>
+            <th>With API</th>
+        </tr>
+        <tr>
+            <td>An app finds the current weather in London by opening http://www.weather.com/ and reading the webpage like a human does, interpreting the content.</td>
+            <td>An app finds the current weather in London by sending a message to the weather.com API (in a structured format like JSON). The weather.com API then replies with a structured response.</td>
+        </tr>
+    </table>
+    </article>
+
+  <!-- Article 9: Week 9 -->
+    <article class="card article" id="wk9">
+      <h2>What I learnt? Week 9</h2>
+      <h5>Bootstrap: Faster Dev Design</h5>
+      <img src="images/wk9.png" alt="CA9 exercise" class="img">
+      <br>
+      <p>Today, I learned that Bootstrap, a helpful tool for making websites, started because developers wanted an easier way to create User Interfaces due to issues with 
+        different browsers and devices. It began from developers feeling a bit bored but turned into a great solution for simplifying the development process. 
+        Bootstrap contains sets of tools that make it simpler for us to create websites that work well on various devices, keeping up with the changes in technology. 
+        I used bootstrap to create a simple about me website.</p>
+    </article>
+  
+    <!-- Article 10: Week 10 -->
+    <article class="card article" id="wk10">
+      <h2>NO LESSON</h2>
+    </article>
+
+    <!-- Article 11: Week 11 -->
+    <article class="card article" id="wk11">
+      <h2>NO LESSON</h2>
+    </article>
+
+    <!-- Article 12: Week 12 -->
+    <article class="card article" id="wk12">
+      <h2>What I learnt? Week 12</h2>
+      <h5>RESTDB & NoSQL</h5>
+      <img src="images/wk12.png" alt="CA12 exercise" class="img">
+      <br>
+      <p>Today, I learned that NoSQL databases, also known as "Not only SQL." These databases are great for storing and getting unstructured data. Unlike traditional databases, 
+        NoSQL can manage a massive amount of data with a flexible structure called a dynamic schema. In a NoSQL database, there's no fixed way to ask for data (query language), 
+        and it has fewer relationships between data. Instead, it stores information in collections and documents. Imagine a library where each book is a document, and all books 
+        together make a collection. NoSQL databases allow having many collections, each containing lots of documents, making it versatile for handling different kinds of data.</p>
+    </article>
+  
+    <!-- Article 13: Week 13 -->
+    <article class="card article" id="wk13">
+      <h2>What I learnt? Week 13</h2>
+      <h5>Common Mistakes for ASG1</h5>
+      <img src="images/wk13.png" alt="CA13 exercise" class="img">
+      <br>
+      <p>Today is just talking abour the common mistakes we did for asg1<br>
+        File Naming Linking problems<br>
+        - No Github repository<br>
+        - Missing out filling in Github pages link in readme.</p>
+    </article>
+
+    <!-- Article 14: Week 14 -->
+    <article class="card article" id="wk14">
+      <h2>What I learnt? Week 14</h2>
+      <h5>Lottie</h5>
+      <img src="images/wk14.png" alt="CA14 exercise" class="img">
+      <br>
+      <p>Today, I learned about Lottie, a cool tool for adding animations and interactivity to websites or mobile apps. Lottie uses a JSON-based file format for animations, 
+        making it easy for designers to share animations on various platforms just like static images. These animation files are compact, work on any device, and can be resized 
+        without losing quality. It's like sending small and versatile animated pictures that look great no matter the device or screen size. Extremely Lightweight Animation & Design,
+        because it is just code</p>
     </article>
   </section>
+
 
   <!-- Contact Me Section -->
   <div class="contact-section text-center" id="contact">
